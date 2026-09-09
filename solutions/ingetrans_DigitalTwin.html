@@ -420,12 +420,12 @@
     <div class="container hero-shell">
       <div class="lang lang-es">
         <div class="header-logo">
-          <img src="./simple-in.png" alt="Ingecart logo" />
+          <img src="./simple-in.png" alt="Ingecart logo" onerror="this.onerror=null;this.src='../assets/images/simple-in.png';" />
           <span>INGECART</span>
         </div>
         <div class="eyebrow">Digital Twin · Trabajos cortos · Devolución de bobinas</div>
         <h1>Resultados del test Digital Twin con INGETRANS en entorno de producción de series cortas</h1>
-        <p class="lead">El escenario reproduce una planta con alta variabilidad, jobs cortos y frecuentes cambios de bobina. La comparación demuestra que la diferencia competitiva no viene de la velocidad de la máquina, sino de mantener continuidad de material y reducir la dependencia del operario y del montacargas.</p>
+        <p class="lead">El escenario reproduce una planta de referencia con alta variabilidad, trabajos cortos y frecuentes cambios de bobina. La comparación muestra que la diferencia competitiva no viene de la velocidad de la máquina, sino de mantener continuidad de material y reducir la dependencia del operario y del montacargas.</p>
         <div class="meta-row">
           <span class="chip">Ingetrans</span>
           <span class="chip">Short runs</span>
@@ -436,12 +436,12 @@
 
       <div class="lang lang-en hidden">
         <div class="header-logo">
-          <img src="./simple-in.png" alt="Ingecart logo" />
+          <img src="./simple-in.png" alt="Ingecart logo" onerror="this.onerror=null;this.src='../assets/images/simple-in.png';" />
           <span>INGECART</span>
         </div>
         <div class="eyebrow">Digital Twin · Short runs · Reel return</div>
         <h1>Digital Twin test results with INGETRANS in a short-run production environment</h1>
-        <p class="lead">The scenario reproduces a plant with high variability, short jobs and frequent reel changes. The comparison shows that the competitive gap does not come from machine speed, but from preserving material continuity and reducing dependence on the operator and the forklift.</p>
+        <p class="lead">The scenario reproduces a reference plant with high variability, short jobs and frequent reel changes. The comparison shows that the competitive gap does not come from machine speed, but from preserving material continuity and reducing dependence on the operator and the forklift.</p>
         <div class="meta-row">
           <span class="chip">Ingetrans</span>
           <span class="chip">Short runs</span>
@@ -846,23 +846,97 @@
     <section class="section">
       <div class="lang lang-es">
         <div class="section-header">
-          <div class="section-no">06 · Conclusión</div>
+          <div class="section-no">06 · Estado de validación y gaps</div>
+          <h2>Qué está validado, qué es transferible y qué debe confirmarse con datos del cliente</h2>
+        </div>
+
+        <div class="grid">
+          <div class="card accent col-4">
+            <div class="metric-label">Validado en fuente</div>
+            <ul>
+              <li>Parámetros del escenario: 1 corrugador, 5 roll stands, 10 supply tracks, 220 m/min, 8,8 bobinas/hora.</li>
+              <li>KPI del test: producción, OEE, starvation, downtime, tiempos de entrega y respuesta.</li>
+              <li>Flujo bidireccional con suministro y devolución automática de bobinas.</li>
+            </ul>
+          </div>
+          <div class="card amber col-4">
+            <div class="metric-label">Parcialmente confirmado</div>
+            <ul>
+              <li>La mejora frente al benchmark base es coherente con un escenario de más estrés por cambios y series cortas.</li>
+              <li>Las afirmaciones sobre menor congestión, menor búsqueda y menor intervención están soportadas cualitativamente.</li>
+              <li>La reducción de wrong reel figura como valor aproximado (~80%).</li>
+            </ul>
+          </div>
+          <div class="card red col-4">
+            <div class="metric-label">Gap de validación local</div>
+            <ul>
+              <li>El ahorro anual y la capacidad adicional deben recalibrarse con calendario, mix, coste y consumo reales del cliente.</li>
+              <li>No debe presentarse como garantía de planta específica sin inputs locales y modelo calibrado.</li>
+              <li>Faltan percentiles p50/p95 de request-to-delivery para esta versión comercial del informe.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="formula">Nivel de confianza comercial: alto para los datos del escenario Digital Twin; medio para su extrapolación directa a una planta concreta sin calibración local.</div>
+      </div>
+
+      <div class="lang lang-en hidden">
+        <div class="section-header">
+          <div class="section-no">06 · Validation status and gaps</div>
+          <h2>What is validated, what is transferable, and what still needs customer data confirmation</h2>
+        </div>
+
+        <div class="grid">
+          <div class="card accent col-4">
+            <div class="metric-label">Validated in source</div>
+            <ul>
+              <li>Scenario parameters: 1 corrugator, 5 roll stands, 10 supply tracks, 220 m/min, 8.8 reels/hour.</li>
+              <li>Test KPI values: production, OEE, starvation, downtime, delivery and response times.</li>
+              <li>Bidirectional flow with automatic reel supply and return.</li>
+            </ul>
+          </div>
+          <div class="card amber col-4">
+            <div class="metric-label">Partially confirmed</div>
+            <ul>
+              <li>The uplift versus the base benchmark is consistent with a higher-stress short-run scenario.</li>
+              <li>Claims about lower congestion, reduced searching and less operator intervention are qualitatively supported.</li>
+              <li>Wrong-reel reduction is stated as an approximate value (~80%).</li>
+            </ul>
+          </div>
+          <div class="card red col-4">
+            <div class="metric-label">Local validation gap</div>
+            <ul>
+              <li>Annual savings and extra capacity must be recalibrated using the customer’s actual calendar, mix, cost and consumption data.</li>
+              <li>It should not be presented as a site-specific guarantee without local inputs and a calibrated model.</li>
+              <li>Request-to-delivery p50/p95 percentiles are not yet published in this client-facing version.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="formula">Commercial confidence level: high for the Digital Twin scenario data; medium for direct extrapolation to a specific plant without local calibration.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="lang lang-es">
+        <div class="section-header">
+          <div class="section-no">07 · Conclusión</div>
           <h2>En plantas con alta mezcla y series cortas, la logística de bobinas deja de ser un servicio y se convierte en un activo productivo crítico.</h2>
         </div>
 
         <div class="callout">
-          La prueba Digital Twin confirma que Ingetrans mejora la continuidad del proceso no por aumentar la velocidad de la máquina, sino por asegurar la entrega de la siguiente bobina en el momento correcto, con devoluciones automáticas y un nivel de coordinación mucho más estable.
+          La prueba Digital Twin, en este escenario de referencia, indica que Ingetrans mejora la continuidad del proceso no por aumentar la velocidad de la máquina, sino por asegurar la entrega de la siguiente bobina en el momento correcto, con devoluciones automáticas y un nivel de coordinación mucho más estable.
         </div>
       </div>
 
       <div class="lang lang-en hidden">
         <div class="section-header">
-          <div class="section-no">06 · Conclusion</div>
+          <div class="section-no">07 · Conclusion</div>
           <h2>In plants with high mix and short runs, reel logistics stops being a support function and becomes a critical productive asset.</h2>
         </div>
 
         <div class="callout">
-          The Digital Twin test confirms that Ingetrans improves process continuity not by increasing machine speed, but by ensuring the next reel is delivered at the right time, with automatic returns and a much more stable level of coordination.
+          In this reference scenario, the Digital Twin test indicates that Ingetrans improves process continuity not by increasing machine speed, but by ensuring the next reel is delivered at the right time, with automatic returns and a much more stable level of coordination.
         </div>
       </div>
     </section>
