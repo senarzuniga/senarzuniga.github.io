@@ -73,17 +73,14 @@
             <table>
               <thead><tr><th>Parametro</th><th>Especificacion</th></tr></thead>
               <tbody>
-                <tr><td>Tipo de sistema</td><td>Carro transfer guiado por carril superficial + vias en suelo</td></tr>
-                <tr><td>Longitud tipica de via</td><td>12 m (centro transfer a centro roll stand)</td></tr>
-                <tr><td>Velocidad del transfer</td><td>80 m/min</td></tr>
-                <tr><td>Velocidad de via</td><td>59 m/min</td></tr>
-                <tr><td>Aceleracion / desaceleracion</td><td>4,5 s (0 a velocidad maxima)</td></tr>
-                <tr><td>Ciclo pick-up / drop-off</td><td>6,0 s cada uno</td></tr>
-                <tr><td>Diametro maximo de bobina</td><td>1.500 mm</td></tr>
-                <tr><td>Longitud maxima de bobina</td><td>Hasta 1.800 mm</td></tr>
-                <tr><td>Peso maximo de bobina</td><td>&lt; 3.500 kg</td></tr>
-                <tr><td>Numero tipico de vias</td><td>Hasta 10 (5 roll stands x 2 vias)</td></tr>
-                <tr><td>Plataforma de control</td><td>Siemens S7 (opcional)</td></tr>
+                <tr><td>Tipo de sistema</td><td>Carro transfer guiado por carril superficial con vias fijas dedicadas para bobinas.</td></tr>
+                <tr><td>Velocidad de transferencia</td><td>Valor nominal de referencia hasta 100-80 m/min; valor final sujeto al layout aprobado y a las zonas de seguridad.</td></tr>
+                <tr><td>Velocidad de via</td><td>Valor nominal de referencia hasta 12-19 m/min.</td></tr>
+                <tr><td>Aceleracion / desaceleracion</td><td>Rampa de referencia de aproximadamente 1,5 segundos.</td></tr>
+                <tr><td>Recogida / entrega</td><td>Accion de transferencia de referencia de aproximadamente 6 segundos por interfaz.</td></tr>
+                <tr><td>Envolvente de bobina</td><td>Hasta 1.500 mm de diametro, hasta 2.800 mm de ancho/largo y por debajo de 3.500 kg, sujeto a la matriz final de bobinas aprobada.</td></tr>
+                <tr><td>Control</td><td>Arquitectura PLC/HMI industrial, comunicaciones PROFINET/industriales y senales de interfaz definidas durante la ingenieria.</td></tr>
+                <tr><td>Seguridad</td><td>Funciones de safety PLC, escaneres de area, enclavamientos, paradas de emergencia y accesos protegidos segun la evaluacion final de riesgos.</td></tr>
               </tbody>
             </table>
 
@@ -91,7 +88,7 @@
             <ol>
               <li><strong>Zona de intercambio en almacén:</strong> bobinas preparadas y posicionadas para la transferencia.</li>
               <li><strong>Recogida por carro transfer:</strong> elevacion y sujecion de una o dos bobinas (ciclo aproximado 6 s).</li>
-              <li><strong>Transporte:</strong> aceleracion a velocidad nominal y desplazamiento por carriles hasta las vias de entrega.</li>
+              <li><strong>Transporte:</strong> aceleracion (rampa aproximada de 1,5 s) a velocidad nominal y desplazamiento por carriles hasta las vias de entrega.</li>
               <li><strong>Entrega:</strong> posicionamiento y descarga sobre el transportador de via.</li>
               <li><strong>Retorno simultaneo opcional:</strong> recogida de bobinas parcialmente usadas en el viaje de vuelta.</li>
               <li><strong>Retorno automatico a almacen:</strong> las bobinas no usadas o semi-usadas se devuelven a ubicaciones asignadas.</li>

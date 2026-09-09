@@ -73,17 +73,14 @@
             <table>
               <thead><tr><th>Parameter</th><th>Specification</th></tr></thead>
               <tbody>
-                <tr><td>System Type</td><td>Surface rail‑guided transfer carriage + floor tracks</td></tr>
-                <tr><td>Typical Track Length</td><td>12 m (transfer centre to roll‑stand centre)</td></tr>
-                <tr><td>Transfer Carriage Speed</td><td>80 m/min (≈262 ft/min)</td></tr>
-                <tr><td>Track Speed</td><td>59 m/min</td></tr>
-                <tr><td>Acceleration / Deceleration</td><td>4.5 s (0 → max speed)</td></tr>
-                <tr><td>Pick‑up / Drop‑off Cycle</td><td>6.0 s each</td></tr>
-                <tr><td>Max Reel Diameter</td><td>1,500 mm</td></tr>
-                <tr><td>Max Reel Length</td><td>up to 1,800 mm</td></tr>
-                <tr><td>Max Reel Weight</td><td>&lt; 3,500 kg</td></tr>
-                <tr><td>Typical Number of Tracks</td><td>Up to 10 (5 roll stands × 2 tracks)</td></tr>
-                <tr><td>Control Platform</td><td>Siemens S7 (optional)</td></tr>
+              <tr><td>System Type</td><td>Surface rail-guided transfer carriage with dedicated fixed reel tracks.</td></tr>
+              <tr><td>Transfer Speed</td><td>Reference nominal value up to 100-80 m/min; final value subject to approved layout and safety zones.</td></tr>
+              <tr><td>Track Speed</td><td>Reference nominal value up to 12-19 m/min.</td></tr>
+              <tr><td>Acceleration / Deceleration</td><td>Reference ramp approximately 1.5 seconds.</td></tr>
+              <tr><td>Pickup / Drop-off</td><td>Reference transfer action approximately 6 seconds per interface.</td></tr>
+              <tr><td>Reel Envelope</td><td>Up to 1,500 mm diameter, up to 2,800 mm width/length and below 3,500 kg, subject to final approved reel matrix.</td></tr>
+              <tr><td>Controls</td><td>Industrial PLC/HMI architecture, PROFINET/industrial communications and interface signals defined during engineering.</td></tr>
+              <tr><td>Safety</td><td>Safety PLC functions, area scanners, interlocks, emergency stops and protected access according to the final risk assessment.</td></tr>
               </tbody>
             </table>
 
@@ -91,7 +88,7 @@
             <ol>
               <li><strong>Warehouse exchange zone:</strong> Reels staged and positioned for transfer.</li>
               <li><strong>Transfer carriage pick‑up:</strong> Elevates and secures one or two reels (≈6 s cycle).</li>
-              <li><strong>Transport:</strong> Accelerates (4.5 s ramp) to nominal speed and follows floor rails to delivery tracks.</li>
+              <li><strong>Transport:</strong> Accelerates (about 1.5 s ramp) to nominal speed and follows floor rails to delivery tracks.</li>
               <li><strong>Delivery:</strong> Positions reel at track and discharges to track conveyor (≈6 s drop‑off).</li>
               <li><strong>Simultaneous return (optional):</strong> Carriage can collect partially used reels on return trips.</li>
               <li><strong>Automatic return to warehouse:</strong> Unused/semi‑used reels are returned to assigned storage locations.</li>
